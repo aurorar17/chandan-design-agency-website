@@ -1,11 +1,102 @@
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    /* Immagini agli estremi */
-    align-items: center;
+
+
+@media screen and (max-width: 1300px) {
+    .slideshow-container {
+        width: 800px;
+    }
 }
 
-nav ul li img {
-    max-height: 50px;
-    /* Immagini un po' più grandi per il tablet */
+@media screen and (max-width: 1024px) {
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        /* Immagini agli estremi */
+        align-items: center;
+    }
+    
+    nav ul li img {
+        max-height: 50px;
+        /* Immagini un po' più grandi per il tablet */
+    }
+
+
+    /* hazz */
+    
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .slideshow-container {
+        width: 482px;
+        max-width: 100%;
+        padding: 40px 30px;
+    }
+    .slide-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        text-align: center;
+    }
+
+    .img-left {
+        margin: 0 auto;
+    }
+
+    #contact .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .flexbox {
+        width: 100% !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0;
+    }
+    .flex-item {
+        width: calc(50% - 20px);
+    }
+
+    .input-area {
+        width: 570px !important;
+        max-width: 100%;
+    }
+
+    .box-item {
+        width: 48% !important;
+    }
+
+    .box-item:nth-child(n+3) {
+        display: none;
+    }
+
+    footer .container {
+        grid-template-columns: 3fr 2fr 3fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 50px;
+        grid-template-areas:
+            'logo-area newsletter newsletter'
+            'footer-contact explore .'
+        ;
+    }
+
+    .explore {
+        justify-self: end;
+    }
+
+    .box-text {
+        font-size: 1.25rem;
+    }
+
+    footer .container {
+        padding: 0;
+    }
+    
+    .copyright {
+        margin-top: 40px !important;
+    }
+
 }
