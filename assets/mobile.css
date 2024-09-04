@@ -1,0 +1,12 @@
+nav ul {
+    display: flex;
+    flex-direction: column;
+    /* Impila le immagini verticalmente */
+    align-items: center;
+    /* Centra le immagini */
+}
+
+nav ul li img {
+    max-height: 40px;
+    /* Immagini più piccole per il mobile */
+}

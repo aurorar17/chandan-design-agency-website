@@ -1,0 +1,11 @@
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* Immagini agli estremi */
+    align-items: center;
+}
+
+nav ul li img {
+    max-height: 50px;
+    /* Immagini un po' più grandi per il tablet */
+}
