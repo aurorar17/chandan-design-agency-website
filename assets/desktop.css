@@ -146,10 +146,23 @@ section {
     margin-bottom: 80px;
 }
 
+
 .underline {
-    border-bottom: 3px solid #4361EE;
-    /* 동그랗게 만드는 것 추가해야함 */
+    position: relative;
+    padding-bottom: 15px;
 }
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+    border-radius: 100%;
+    box-shadow: 0 -3px 0 #4361EE;
+}
+
 
 
 .slide-container {
