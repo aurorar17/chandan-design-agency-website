@@ -42,6 +42,7 @@ nav ul li img {
     flex-direction: column;
     gap: 30px;
     margin-left: 100px;
+    margin-right: 12%;
 }
 
 #title-image img {
@@ -50,11 +51,6 @@ nav ul li img {
     margin-right: 100px;
     padding-top: 7%;
     margin-bottom: -60px;
-}
-
-#title-button img {
-    width: auto;
-    height: 40px;
 }
 
 #main-title {
@@ -66,11 +62,13 @@ nav ul li img {
 
 .container-white {
     background-color: white;
-    margin: 5% 10%;
+    margin: 5%;
 }
 
 .article-title {
     text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
 }
 
 .article-section {
@@ -82,10 +80,31 @@ nav ul li img {
     margin: 0 100px;
 }
 
-article p {
+#paragraph {
     color: #4F5863;
-    font-size: 1.2em;
+    font-size: 1.25rem;
     /* Aumenta la dimensione del testo per una migliore leggibilità */
+    line-height: 170%;
+    margin-bottom: 4%;
+}
+
+#article1 {
+    color: #4F5863;
+    font-size: 1.25rem;
+    /* Aumenta la dimensione del testo per una migliore leggibilità */
+    line-height: 170%;
+    margin-left: 12%;
+    margin-bottom: 3%;
+}
+
+
+#article2 {
+    color: #4F5863;
+    font-size: 1.25rem;
+    /* Aumenta la dimensione del testo per una migliore leggibilità */
+    line-height: 170%;
+    margin-left: 12%;
+    padding-bottom: 7%;
 }
 
 /* menu section */
@@ -98,6 +117,7 @@ article p {
 
 .menu-section-title {
     text-align: center;
+    padding-top: 5%;
 }
 
 .menu-images-grid {
@@ -105,6 +125,8 @@ article p {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     margin: 0 100px;
+    column-gap: 2%;
+    row-gap: 3%;
 }
 
 .menu-images-grid img {
@@ -112,8 +134,11 @@ article p {
     padding-bottom: 10%;
 }
 
-#grid-bottom {
+#grid-button {
     align-items: center;
+    padding-bottom: 5%;
+    padding-top: 2%;
+
 }
 
 
@@ -191,7 +216,8 @@ section {
 
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -208,31 +234,33 @@ section {
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: center;
-  }
-  
-  /* Position the "next button" to the right */
-
-  .prev {
-    background-image: url(../img/arrow-left.svg);
-    left: 0;   
 }
-  .next {
+
+/* Position the "next button" to the right */
+
+.prev {
+    background-image: url(../img/arrow-left.svg);
+    left: 0;
+}
+
+.next {
     background-image: url(../img/arrow-right.svg);
     right: 0;
 }
 
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* The dots/bullets/indicators */
-  .pager {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.pager {
     text-align: center;
     margin-top: 30px;
-  }
+}
 
-  .dot {
+.dot {
     cursor: pointer;
     height: 8px;
     width: 8px;
@@ -241,18 +269,19 @@ section {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #1A2630;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+/* Fading animation */
+.fade {
     display: grid;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
 
 
 .img-left {
@@ -304,6 +333,7 @@ section {
     display: flex;
     padding: 0;
 }
+
 #contact .container>div {
     width: 50%;
 }
@@ -320,7 +350,7 @@ section {
     flex-direction: column;
     display: grid;
     grid-template-columns: 40px auto;
-    grid-template-areas: 
+    grid-template-areas:
         'img-area bold-text'
         '. info-text'
     ;
@@ -348,6 +378,7 @@ section {
     font-weight: 500;
     color: #1A2630;
 }
+
 .info-text {
     grid-area: info-text;
     font-size: 1.125rem;
@@ -363,7 +394,7 @@ section {
     flex-direction: column;
     gap: 18px;
     padding: 40px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     margin-bottom: -60px;
 }
 
@@ -483,10 +514,21 @@ footer .container {
 }
 
 
-.logo-area {grid-area: logo-area;}
-.newsletter {grid-area: newsletter;}
-.footer-contact {grid-area: footer-contact;}
-.explore {grid-area: explore;}
+.logo-area {
+    grid-area: logo-area;
+}
+
+.newsletter {
+    grid-area: newsletter;
+}
+
+.footer-contact {
+    grid-area: footer-contact;
+}
+
+.explore {
+    grid-area: explore;
+}
 
 .logo-area>img {
     width: 70px;
@@ -506,7 +548,7 @@ footer .container {
     font-size: 1.25rem;
 }
 
-.contact-cell p, 
+.contact-cell p,
 .explore li a,
 .newsletter label {
     font-size: 1rem;
