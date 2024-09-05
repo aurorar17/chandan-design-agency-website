@@ -1,28 +1,93 @@
+/* TABLET CSS FILE */
+@media (max-width: 1024px) {
 
-
-@media screen and (max-width: 1300px) {
-    .slideshow-container {
-        width: 800px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
+    /* navigation bar section */
 
     nav ul {
         display: flex;
         justify-content: space-between;
         /* Immagini agli estremi */
         align-items: center;
+        flex-wrap: wrap;
     }
-    
+
     nav ul li img {
         max-height: 50px;
-        /* Immagini un po' più grandi per il tablet */
+        /* Mantieni l'altezza massima per le immagini */
+        width: auto;
     }
+
+
+    /* title section */
+
+    #main-title {
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    #title-image img {
+        max-width: 75%;
+        height: auto;
+    }
+
+
+    /* article section */
+
+    .article-section {
+        flex-direction: column;
+        /* Dispone gli elementi in colonna invece che in riga */
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    #article-image {
+        margin-bottom: 20px;
+    }
+
+    article {
+        padding-bottom: 8%;
+    }
+
+    #article1,
+    #article2 {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 10px;
+    }
+
+    /* menu section */
+
+    .container-lightblue2 {
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+
+    #paragraph {
+        margin-top: 4%;
+    }
+
+    .menu-images-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Mantieni 4 colonne */
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 4%;
+    }
+
+    .menu-images-grid img:nth-child(n+5) {
+        display: none;
+        /* Nascondi le immagini dalla quinta in poi */
+    }
+
+    #grid-button {
+        margin-top: 4%;
+    }
+
+
+    /* END OF AURORA'S PART */
 
 
     /* hazz */
-    
+
     .subtitle {
         font-size: 2rem;
     }
@@ -32,6 +97,7 @@
         max-width: 100%;
         padding: 40px 30px;
     }
+
     .slide-content {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
@@ -56,6 +122,7 @@
         gap: 20px;
         padding: 0;
     }
+
     .flex-item {
         width: calc(50% - 20px);
     }
@@ -94,7 +161,7 @@
     footer .container {
         padding: 0;
     }
-    
+
     .copyright {
         margin-top: 40px !important;
     }

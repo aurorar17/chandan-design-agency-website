@@ -1,18 +1,103 @@
-
 @media screen and (max-width: 768px) {
+
+    /* MOBILE CSS FILE */
+
+    /* navigation bar */
 
     nav ul {
         display: flex;
-        flex-direction: column;
-        /* Impila le immagini verticalmente */
+        flex-direction: row;
         align-items: center;
-        /* Centra le immagini */
+        justify-content: space-between;
     }
-    
+
     nav ul li img {
         max-height: 40px;
-        /* Immagini più piccole per il mobile */
     }
+
+    /* title section */
+
+    .container-lightblue1 {
+        flex-direction: column;
+        /* Cambia la direzione del layout per mobile */
+        align-items: center;
+        padding: 2%;
+    }
+
+    .left-content {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #main-title {
+        font-size: 1.0em;
+        text-align: center;
+        line-height: 1.4;
+        margin-top: 10%;
+    }
+
+    #title-image {
+        margin-top: 10%;
+        margin-bottom: -15%;
+        text-align: center;
+    }
+
+    #title-image img {
+        max-height: 400px;
+        width: 100%;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    /* article section */
+
+    .container-white {
+        margin: 100px 10px;
+
+    }
+
+    #article-image {
+        width: 300px;
+
+    }
+
+    #article-image img {
+        display: block;
+        width: 100%;
+    }
+
+    /* menu section */
+
+
+    .container-lightblue2 {
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+
+    #paragraph {
+        margin-top: 4%;
+    }
+
+    .menu-images-grid {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .menu-images-grid img:nth-child(n+5) {
+        display: none;
+        /* Nascondi le immagini dalla quinta in poi */
+    }
+
+    #grid-button {
+        margin-top: 4%;
+    }
+
+
+
+    /* END OF AURORA'S PART */
 
 
 
@@ -20,20 +105,25 @@
     .subtitle {
         font-size: 1.5rem;
     }
+
     .slideshow-container {
         padding: 35px 25px;
     }
-    .prev, .next {
+
+    .prev,
+    .next {
         display: none;
     }
 
     .img-left {
         width: 238px;
     }
+
     .mask-img {
         width: 224px;
         height: 220px;
     }
+
     .text-wrap {
         font-size: 1.125rem;
     }
@@ -41,6 +131,7 @@
     .flexbox {
         padding: 0;
     }
+
     .flex-item {
         width: 100%;
     }
@@ -49,6 +140,7 @@
         flex-direction: column;
         gap: 50px;
     }
+
     .box-item {
         width: 100% !important;
     }
@@ -62,6 +154,7 @@
             'explore'
         ;
     }
+
     .explore {
         justify-self: start;
     }

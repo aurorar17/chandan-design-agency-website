@@ -31,7 +31,7 @@ nav ul li img {
     justify-content: space-between;
     align-items: center;
     background-color: #E9F4FF;
-    padding: 1%;
+    padding: 2% 5%;
     width: 100%;
     font-size: 30px;
     line-height: 70px;
@@ -41,21 +41,19 @@ nav ul li img {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-left: 100px;
-    margin-right: 12%;
+    margin-left: 3%;
+    margin-right: 5%;
 }
 
 #title-image img {
     max-height: 567px;
     max-width: 100%;
-    margin-right: 100px;
     padding-top: 7%;
-    margin-bottom: -60px;
+    margin-bottom: -18%;
 }
 
 #main-title {
     font-size: 2em;
-    /* Dimensione del testo del titolo ADATTATA per TESTI PIU GRANDI */
 }
 
 /* article section */
@@ -142,6 +140,7 @@ nav ul li img {
 }
 
 
+/* END OF AURORA'S PART */
 
 
 /* hazz */
