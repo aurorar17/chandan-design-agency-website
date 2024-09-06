@@ -10,13 +10,14 @@ Chandan Singh. https://www.figma.com/@uiuxchandan
 
 https://aurorar17.github.io/chandan-design-agency-website/
 
-## Preview
+## Preview - Mobile
+<img src="./screenshot/top part_Aurorar.jpg" width="45%">
+<img src="./screenshot/bottom part_Hyejin.jpg" width="45%">
 
-![Preview - mobile] (./screenshot/top part_Aurorar.jpg)
-![Preview - mobile] (./screenshot/bottom part_Hyejin.jpg)
+## Preview - PC
+<img src="./screenshot/pc_top_part.png">
+<img src="./screenshot/pc_bottom_part.png">
 
-![Preview - PC] (./screenshot/pc_top_part.png)
-![Preview - PC] (./screenshot/pc_bottom_part.png)
-
-![Preview - Tablet] (./screenshot/tablet_top.png)
-![Preview - Tablet] (./screenshot/tablet_bottom.png)
+## Preview - Tablet
+<img src="./screenshot/tablet_top.png">
+<img src="./screenshot/tablet_bottom.png">
